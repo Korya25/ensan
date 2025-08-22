@@ -53,7 +53,7 @@ class _LoginButtonState extends State<LoginButton> {
               setState(() => currentError = state.message);
             } else if (state is LoginSuccess) {
               context.read<AuthCubit>().authenticateUser(state.user);
-              context.goNamed(AppRoutes.settings);
+              context.goNamed(AppRoutes.home);
             }
           },
           builder: (context, state) {

@@ -95,7 +95,7 @@ class _LoginViewState extends State<LoginView> {
             child: CustomButton(
               text: 'Continue as guest',
               onTap: () {
-                context.goNamed(AppRoutes.settings);
+                context.goNamed(AppRoutes.home);
                 SharedPref.setBool(PrefKeys.guest, true);
               },
               textColor: AppColors.textAndIconThritly,
