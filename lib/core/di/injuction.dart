@@ -2,13 +2,13 @@ import 'package:get_it/get_it.dart';
 import 'package:ensan_app/core/services/shared_pref/shared_pref.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:ensan_app/features/data/datasources/auth_datasource.dart';
-import 'package:ensan_app/features/data/datasources/local_datasource.dart';
-import 'package:ensan_app/features/data/repositories/auth_repository.dart';
-import 'package:ensan_app/features/presentation/controller/auth/auth_cubit.dart';
-import 'package:ensan_app/features/presentation/controller/forgot_pass_cubit/forgot_password_cubit.dart';
-import 'package:ensan_app/features/presentation/controller/login/login_cubit.dart';
-import 'package:ensan_app/features/presentation/controller/register/register_cubit.dart';
+import 'package:ensan_app/features/auth/data/datasources/auth_datasource.dart';
+import 'package:ensan_app/features/auth/data/datasources/local_datasource.dart';
+import 'package:ensan_app/features/auth/data/repositories/auth_repository.dart';
+import 'package:ensan_app/features/auth/presentation/controller/auth/auth_cubit.dart';
+import 'package:ensan_app/features/auth/presentation/controller/forgot_pass_cubit/forgot_password_cubit.dart';
+import 'package:ensan_app/features/auth/presentation/controller/login/login_cubit.dart';
+import 'package:ensan_app/features/auth/presentation/controller/register/register_cubit.dart';
 
 import 'package:ensan_app/firebase_options.dart';
 

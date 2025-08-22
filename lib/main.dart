@@ -9,7 +9,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ensan_app/core/router/app_router.dart';
 import 'package:ensan_app/core/style/theme/app_theme.dart';
 import 'package:ensan_app/core/utils/bloc_observer.dart';
-import 'package:ensan_app/features/presentation/controller/auth/auth_cubit.dart';
+import 'package:ensan_app/features/auth/presentation/controller/auth/auth_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
