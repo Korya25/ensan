@@ -18,7 +18,7 @@ class AppRouter {
   static final GoRouter router = GoRouter(
     // ignore: unrelated_type_equality_checks
     initialLocation: SharedPref.getBool(PrefKeys.isLoggedIn) == true
-        ? AppRoutes.settings
+        ? AppRoutes.home
         : AppRoutes.login,
     routes: [
       GoRoute(
@@ -68,7 +68,7 @@ class AppRouter {
           child: HomeView(),
         ),
       ),
-      GoRoute(
+      /* GoRoute(
         path: AppRoutes.settings,
         name: AppRoutes.settings,
         pageBuilder: (context, state) => AppTransitions.slideFromRight(
@@ -76,7 +76,7 @@ class AppRouter {
           state: state,
           child: SettingsView(),
         ),
-      ),
+      ),*/
     ],
   );
 }
