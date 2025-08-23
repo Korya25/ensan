@@ -7,7 +7,7 @@ import 'package:ensan_app/core/style/theme/app_colors.dart';
 class AppDivider extends StatelessWidget {
   const AppDivider({
     this.thickness = 1,
-    this.color = AppColors.textAndIconSecondary,
+    this.color = AppColors.textAndIconPrimary,
     super.key,
     this.showTitle = true,
     this.title,
@@ -24,7 +24,7 @@ class AppDivider extends StatelessWidget {
         Expanded(
           child: Container(
             height: 1,
-            color: AppColors.textAndIconSecondary.withOpacity(0.3),
+            color: AppColors.textAndIconPrimary.withOpacity(0.3),
           ),
         ),
         if (showTitle == true)
@@ -32,7 +32,7 @@ class AppDivider extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: TextApp(
               text: title ?? 'OR',
-              color: AppColors.textAndIconSecondary,
+              color: AppColors.textAndIconPrimary,
               fontSize: 12,
               fontWeight: FontWeight.w500,
             ),
@@ -40,7 +40,7 @@ class AppDivider extends StatelessWidget {
         Expanded(
           child: Container(
             height: 1,
-            color: AppColors.textAndIconSecondary.withOpacity(0.3),
+            color: AppColors.textAndIconPrimary.withOpacity(0.3),
           ),
         ),
       ],
