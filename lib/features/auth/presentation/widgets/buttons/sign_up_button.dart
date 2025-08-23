@@ -55,7 +55,7 @@ class _SignUpButtonState extends State<SignUpButton> {
               // Update the global auth state
               context.read<AuthCubit>().authenticateUser(state.user);
               // Navigate to home screen
-              context.goNamed(AppRoutes.home);
+              context.goNamed(AppRoutes.settings);
             }
           },
           builder: (context, state) {

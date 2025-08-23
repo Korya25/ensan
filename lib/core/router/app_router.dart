@@ -1,4 +1,5 @@
 import 'package:ensan_app/features/home/views/home_view.dart';
+import 'package:ensan_app/help.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ensan_app/core/di/injuction.dart';
@@ -17,7 +18,7 @@ class AppRouter {
   static final GoRouter router = GoRouter(
     // ignore: unrelated_type_equality_checks
     initialLocation: SharedPref.getBool(PrefKeys.isLoggedIn) == true
-        ? AppRoutes.home
+        ? AppRoutes.settings
         : AppRoutes.login,
     routes: [
       GoRoute(
@@ -65,6 +66,15 @@ class AppRouter {
           context: context,
           state: state,
           child: HomeView(),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.settings,
+        name: AppRoutes.settings,
+        pageBuilder: (context, state) => AppTransitions.slideFromRight(
+          context: context,
+          state: state,
+          child: SettingsView(),
         ),
       ),
     ],
