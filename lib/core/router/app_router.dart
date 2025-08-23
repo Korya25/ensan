@@ -1,4 +1,6 @@
 import 'package:ensan_app/features/home/views/home_view.dart';
+import 'package:ensan_app/features/onborading/presentation/views/onborading_view.dart';
+import 'package:ensan_app/features/onborading/presentation/views/splash_view.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ensan_app/core/di/injuction.dart';
@@ -18,8 +20,26 @@ class AppRouter {
     // ignore: unrelated_type_equality_checks
     initialLocation: SharedPref.getBool(PrefKeys.isLoggedIn) == true
         ? AppRoutes.home
-        : AppRoutes.login,
+        : AppRoutes.splash,
     routes: [
+      GoRoute(
+        path: AppRoutes.splash,
+        name: AppRoutes.splash,
+        pageBuilder: (context, state) => AppTransitions.size(
+          context: context,
+          state: state,
+          child: const SplashView(),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.onborading,
+        name: AppRoutes.onborading,
+        pageBuilder: (context, state) => AppTransitions.slideFromLeft(
+          context: context,
+          state: state,
+          child: const OnboradingView(),
+        ),
+      ),
       GoRoute(
         path: AppRoutes.login,
         name: AppRoutes.login,
@@ -67,6 +87,15 @@ class AppRouter {
           child: HomeView(),
         ),
       ),
+      /* GoRoute(
+        path: AppRoutes.settings,
+        name: AppRoutes.settings,
+        pageBuilder: (context, state) => AppTransitions.slideFromRight(
+          context: context,
+          state: state,
+          child: SettingsView(),
+        ),
+      ),*/
     ],
   );
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605990225748",
+    "project_id": "ensan-49bcb",
+    "storage_bucket": "ensan-49bcb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605990225748:android:f1c2ae301bb1de0e92eac1",
+        "android_client_info": {
+          "package_name": "com.example.ensan_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyvLdPnxe9OT-EwBTlwrnz_fSvvcJxygI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

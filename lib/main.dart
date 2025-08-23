@@ -39,7 +39,6 @@ class EnsanApp extends StatelessWidget {
           routerConfig: AppRouter.router,
           debugShowCheckedModeBanner: false,
           theme: AppTheme.theme(),
-
           // device preview
           useInheritedMediaQuery: true,
           locale: DevicePreview.locale(context),

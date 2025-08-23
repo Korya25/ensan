@@ -25,9 +25,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,48 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBSYadDU8uaaz4wWXTPzI-nSwhbNmGcZYE',
-    appId: '1:866638899649:web:9c46b86533656556bca740',
-    messagingSenderId: '866638899649',
-    projectId: 'ensan_app-61a83',
-    authDomain: 'ensan_app-61a83.firebaseapp.com',
-    storageBucket: 'ensan_app-61a83.firebasestorage.app',
-    measurementId: 'G-527NGMVR9Y',
+    apiKey: 'AIzaSyC8hL_kH4Rs9js8bF-LpXFWWi81FzwfvIY',
+    appId: '1:605990225748:web:966be7605c0ae09092eac1',
+    messagingSenderId: '605990225748',
+    projectId: 'ensan-49bcb',
+    authDomain: 'ensan-49bcb.firebaseapp.com',
+    storageBucket: 'ensan-49bcb.firebasestorage.app',
+    measurementId: 'G-16233RT0P3',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCx9num3xbr9RaFBaxH1m6PiY0UcXGjapM',
-    appId: '1:866638899649:android:ef6e3bf88da3bcbbbca740',
-    messagingSenderId: '866638899649',
-    projectId: 'ensan_app-61a83',
-    storageBucket: 'ensan_app-61a83.firebasestorage.app',
+    apiKey: 'AIzaSyCyvLdPnxe9OT-EwBTlwrnz_fSvvcJxygI',
+    appId: '1:605990225748:android:f1c2ae301bb1de0e92eac1',
+    messagingSenderId: '605990225748',
+    projectId: 'ensan-49bcb',
+    storageBucket: 'ensan-49bcb.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD20FtzrwSzX_R3xHltfjeV_PnmhMsNoLA',
-    appId: '1:866638899649:ios:f03eb76298e872a7bca740',
-    messagingSenderId: '866638899649',
-    projectId: 'ensan_app-61a83',
-    storageBucket: 'ensan_app-61a83.firebasestorage.app',
-    iosBundleId: 'com.example.ensan_app',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyD20FtzrwSzX_R3xHltfjeV_PnmhMsNoLA',
-    appId: '1:866638899649:ios:f03eb76298e872a7bca740',
-    messagingSenderId: '866638899649',
-    projectId: 'ensan_app-61a83',
-    storageBucket: 'ensan_app-61a83.firebasestorage.app',
-    iosBundleId: 'com.example.ensan_app',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBSYadDU8uaaz4wWXTPzI-nSwhbNmGcZYE',
-    appId: '1:866638899649:web:a55aa238cc872873bca740',
-    messagingSenderId: '866638899649',
-    projectId: 'ensan_app-61a83',
-    authDomain: 'ensan_app-61a83.firebaseapp.com',
-    storageBucket: 'ensan_app-61a83.firebasestorage.app',
-    measurementId: 'G-3W89LNH1L5',
+    apiKey: 'AIzaSyBMx9x-Z-ogTG4pQevA3XpAGgqXJ9ViKxI',
+    appId: '1:605990225748:ios:81004449f01de3fc92eac1',
+    messagingSenderId: '605990225748',
+    projectId: 'ensan-49bcb',
+    storageBucket: 'ensan-49bcb.firebasestorage.app',
+    iosBundleId: 'com.example.ensanApp',
   );
 }
